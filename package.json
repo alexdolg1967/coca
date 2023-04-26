@@ -3,7 +3,7 @@
   "version": "1.2",
   "description": "gulp-builder for weblayout",
   "main": "gulpfile.js",
-  "homepage": "",
+  "homepage": "https://alexdolg1967.github.io/coca/",
   "scripts": {
     "html": "node-w3c-validator -f lint -evH -i app/**/*.html",
     "dev": "gulp",

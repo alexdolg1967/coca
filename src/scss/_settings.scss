@@ -70,6 +70,10 @@ section {
     font-size: clamp(2.4rem, 2.4rem + 2.5vw, 5.6rem);
     line-height: 1.2;
   }
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 4rem;
+  }
 }
 
 .grid {
