@@ -1,0 +1,219 @@
+{
+    "svguse": {
+        "scope": "html",
+        "prefix": "g-use",
+        "body": [
+            "<svg class=\"\">",
+            "  <use xlink:href=\"img/sprite.svg#$2\"></use>",
+            "</svg>"
+        ],
+        "description": "Snippet for use svg sprites"
+    },
+    "burger": {
+        "scope": "html",
+        "prefix": "g-burger",
+        "body": [
+            "<button class=\"burger\" aria-label=\"Открыть меню\" aria-expanded=\"false\" data-burger>",
+            "  <span class=\"burger__line\"></span>",
+            "</button>"
+        ],
+        "description": "Snippet for burger btn"
+    },
+    "checkbox": {
+        "scope": "html",
+        "prefix": "g-checkbox",
+        "body": [
+            "<label class=\"custom-checkbox\">",
+            "  <input type=\"checkbox\" class=\"custom-checkbox__field\">",
+            "  <span class=\"custom-checkbox__content\">$1</span>",
+            "</label>"
+        ],
+        "description": "Snippet for custom checkbox"
+    },
+    "navigation": {
+        "scope": "html",
+        "prefix": "g-nav",
+        "body": [
+            "<nav class=\"nav\" aria-label=\"Верхнее меню\" title=\"$1\" data-menu>",
+            "  <ul class=\"nav__list list-reset\">",
+            "    <li class=\"nav__item\" data-menu-item>",
+            "       <a href=\"#\" class=\"nav__link\">$2</a>",
+            "    </li>",
+            "    <li class=\"nav__item\" data-menu-item>",
+            "       <a href=\"#\" class=\"nav__link\">$3</a>",
+            "    </li>",
+            "    <li class=\"nav__item\" data-menu-item>",
+            "      <a href=\"#\" class=\"nav__link\">$4</a>",
+            "    </li>",
+            "  </ul>",
+            "</nav>"
+        ],
+        "description": "Snippet for navigation"
+    },
+    "social": {
+        "scope": "html",
+        "prefix": "g-social",
+        "body": [
+            "<ul class=\"social list-reset\" title=\"$1\">",
+            "  <li class=\"social__item\">",
+            "    <a href=\"#\" target=\"_blank\" class=\"social__link social__link--fb\" aria-label=\"Наша страничка в Фейсбуке\" rel=\"nofollow\">",
+            "    </a>",
+            "  </li>",
+            "  <li class=\"social__item\">",
+            "    <a href=\"#\" target=\"_blank\" class=\"social__link social__link--vk\" aria-label=\"Наша страничка во Вконтакте\" rel=\"nofollow\">",
+            "    </a>",
+            "  </li>",
+            "  <li class=\"social__item\">",
+            "    <a href=\"#\" target=\"_blank\" class=\"social__link social__link--tw\" aria-label=\"Наша страничка в Твиттере\" rel=\"nofollow\">",
+            "    </a>",
+            "  </li>",
+            "</ul>"
+        ],
+        "description": "Snippet for social links"
+    },
+    "basicform": {
+        "prefix": "g-form",
+        "body": [
+            "<form action=\"#\" class=\"form\">",
+            "  <input type=\"hidden\" name=\"theme\" value=\"Обратный звонок\">",
+            "  <input type=\"hidden\" name=\"admin_email[]\" value=\"$1\">",
+            "  <input type=\"hidden\" name=\"form_subject\" value=\"Заявка с сайта\">",
+            "  <div class=\"input__box\">",
+            "    <input type=\"text\" name=\"Имя\" class=\"form__input\" placeholder=\"Имя\" data-validate-field=\"name\">",
+            "    <label class=\"form__label\"></label>",
+            "  </div>",
+            "  <div class=\"input__box\">",
+            "    <input type=\"email\" name=\"email\" class=\"form__input input-mail\" placeholder=\"E-mail\" data-validate-field=\"email\">",
+            "    <label class=\"form__label\"></label>",
+            "  </div>",
+            "  <button type=\"submit\" class=\"btn btn-reset form__btn\">Отправить</button>",
+            "</form>"
+        ],
+        "description": "Snippet for basic form"
+    },
+    "basicswiper": {
+        "prefix": "g-swiper",
+        "body": [
+            "<div class=\"swiper $1\">",
+            "  <div class=\"swiper-wrapper\">",
+            "     <div class=\"swiper-slide\">",
+            "     </div>",
+            "  </div>",
+            "</div>"
+        ],
+        "description": "Snippet for basic swiper structure"
+    },
+	"logo": {
+		"prefix": "g-logo",
+		"body": [
+			"<a class=\"logo\">",
+			"  <picture>",
+			"    <source srcset=\"./img/$1.avif\" type=\"image/avif\">",
+			"    <source srcset=\"./img/$1.webp\" type=\"image/webp\">",
+			"    <img src=\"./img/$1.$2\" class=\"image\" width=\"$3\" height=\"$4\" alt=\"$5\">",
+			"  </picture>",
+			"</a>"
+		],
+		"description": "Snippet for basic logo structure"
+	},
+    "graph modal Btn": {
+        "prefix": "g-graph-btn",
+        "body": [
+            "<button class=\"btn btn-reset $1\" data-graph-path=\"$2\">$3</button>"
+        ],
+        "description": "Snippet for graph-modal btn"
+    },
+    "graph modal Structure": {
+        "prefix": "g-graph-modal",
+        "body": [
+            "<div class=\"graph-modal\">",
+            "  <div class=\"graph-modal__container\" role=\"dialog\" aria-modal=\"true\" data-graph-target=\"$1\">",
+            "    <button class=\"btn btn-reset graph-modal__close\" aria-label=\"Закрыть модальное окно\"></button>",
+            "    <div class=\"graph-modal__content\">$2</div>",
+            "  </div>",
+            "</div>"
+        ],
+        "description": "Snippet for graph-modal basic structure"
+    },
+    "picture": {
+        "prefix": "g-picture",
+        "body": [
+          "<picture>",
+          "    <source srcset=\"./img/$1.avif\" type=\"image/avif\">",
+          "    <source srcset=\"./img/$1.webp, ./img/$1-2x.webp 2x\" type=\"image/webp\">",
+          "    <!-- пример картинки для определенного разрешения  -->",
+          "    <source srcset=\"./img/$1-992.webp\" type=\"image/webp\" media=\"(max-width: 992px)\">",
+          "    <!-- пример для использования системных тем  -->",
+          "    <source srcset=\"./img/$1.webp\" type=\"image/webp\" media=\"(prefers-color-theme: dark)\">",
+          "    <img src=\"./img/$1.$2\" srcset=\"./img/$1-2x.$2 2x\" width=\"$3\" height=\"$4\" alt=\"$5\" class=\"image\" loading=\"lazy\">",
+          "</picture>"
+        ],
+        "description": "Snippet for picture structure"
+    },
+    "svgimg": {
+        "scope": "html",
+        "prefix": "g-svgimg",
+        "body": [
+            "<img loading=\"lazy\" src=\"./img/$1.$2\" class=\"image\" width=\"$3\" height=\"$4\" alt=\"$5\">"
+        ],
+        "description": "Snippet for simple html svg images"
+    },
+    "tooltip": {
+        "prefix": "g-tooltip",
+        "body": [
+            "<span class=\"tooltip\">",
+            "  <button class=\"tooltip__btn\" aria-describedby=\"$1\">$2</button>",
+            "  <span class=\"tooltip__txt\" role=\"tooltip\" id=\"$1\">",
+            "    <span class=\"visually-hidden\">Тултип: </span>",
+            "    $3",
+            "  </span>",
+            "</span>"
+        ],
+        "description": "Snippet for tooltip"
+    },
+    "tabs html sctructure": {
+        "prefix": "g-tabs",
+        "body": [
+            "<div class=\"tabs\" data-tabs=\"$1\" role=\"tablist\">",
+            "  <ul class=\"tabs__nav list-reset\" role=\"tab\">",
+            "    <li class=\"tabs__nav-item\"><button class=\"tabs__nav-btn\" type=\"button\">$2</button></li>",
+            "    <li class=\"tabs__nav-item\"><button class=\"tabs__nav-btn\" type=\"button\">$3</button></li>",
+            "    <li class=\"tabs__nav-item\"><button class=\"tabs__nav-btn\" type=\"button\">$4</button></li>",
+            "  </ul>",
+            "  <div class=\"tabs__content\" role=\"tabpanel\">",
+            "    <div class=\"tabs__panel\">$5</div>",
+            "    <div class=\"tabs__panel\">$6</div>",
+            "    <div class=\"tabs__panel\">$7</div>",
+            "  </div>",
+            "</div>"
+        ],
+        "description": "Snippet for basic tabs structure"
+    }
+    "!!": {
+      "prefix": "!! начальный шаблон",
+      "body": [
+        "<!DOCTYPE html>",
+        "<html lang=\"ru\">",
+        "<head>",
+        "<meta charset=\"UTF-8\">",
+        "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+        "<title>${1:Заголовок сайта}</title>",
+        "<meta name=\"theme-color\" content=\"#c4cdd6\">",
+        "<meta name=\"msapplication-navbutton-color\" content=\"#4c463e\">",
+        "<meta name=\"apple-mobile-web-app-status-bar-style\" content=\"#4c463e\">",
+        "<link rel=\"preload\" href=\"fonts/Roboto-Regular.woff2\" as=\"font\" type=\"font/woff2\" crossorigin>",
+        "<link rel=\"stylesheet\" href=\"css/style.css\">",
+        "</head>",
+        "<body>",
+        "<header></header>",
+        "<main>",
+        "$2",
+        "</main>",
+        "<footer></footer>",
+        "</body>",
+        "<script src=\"js/script.js\"></script>",
+        "</html>"
+      ],
+      "description": "Начальный шаблон"
+}

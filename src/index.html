@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<!--[if lt IE 11]><p   class="browsehappy container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p><![endif]-->
+@include('partials/head.html', {"title": "Заголовок"})
+
+<body class="page__body">
+  @include('partials/svg.html')
+  <div class="wrapper">
+    @include('partials/header.html')
+    <main class="main">
+      @include('partials/hero.html')
+    </main>
+
+    @include('partials/footer.html')
+    @include('partials/modal.html')
+  </div>
+</body>
+
+</html>

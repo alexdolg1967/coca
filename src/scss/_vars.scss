@@ -1,0 +1,14 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Roboto", sans-serif;
+
+  // colors
+  --accent-color: orange;
+  --light-color: #fff;
+}
+$widthContent: 1200;
+$offsetContainer: 15;
+$maxWidthContainer: $widthContent + ($offsetContainer * 2);
+$gap: 16px;
