@@ -38,9 +38,9 @@ const modal = new GraphModal();
 // const tabs = new GraphTabs("tab");
 
 // Получение высоты шапки сайта (не забудьте вызвать функцию)
-import { getHeaderHeight } from "./functions/header-height";
+// import { getHeaderHeight } from "./functions/header-height";
 
-getHeaderHeight();
+// getHeaderHeight();
 
 // Подключение плагина кастом-скролла
 // import 'simplebar';
@@ -67,8 +67,8 @@ getHeaderHeight();
 // const rellax = new Rellax('.rellax');
 
 // Подключение плавной прокрутки к якорям
-import SmoothScroll from "smooth-scroll";
-const scroll = new SmoothScroll('a[href*="#"]');
+// import SmoothScroll from "smooth-scroll";
+// const scroll = new SmoothScroll('a[href*="#"]');
 
 // Подключение событий свайпа на мобильных
 // import 'swiped-events';

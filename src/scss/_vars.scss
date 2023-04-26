@@ -2,10 +2,13 @@
 // colors
 :root {
   // base
-  --font-family: "Roboto", sans-serif;
+  --body-font: "Inter", sans-serif;
+  --second-font: "Roboto", sans-serif;
+  --third-font: "Poppins", sans-serif;
 
   // colors
-  --accent-color: orange;
+  --accent-color: #1D1E25;
+  --text-color: #7E8492;
   --light-color: #fff;
 }
 $widthContent: 1200;
